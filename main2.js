@@ -9,7 +9,7 @@ $(document).ready(function() {
 
     console.log(inizio, fine);
 
-    let nomi_scelti = nomi.filter((element) => element > inizio || element < fine ); // arrow function con return implicito
+    let nomi_scelti = nomi.filter((element) => (indexOf[element] > inizio || indexOf[element] < fine)); // arrow function con return implicito
     console.log(nomi_scelti);
 
     // var nomi_estratti = [];
