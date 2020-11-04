@@ -15,8 +15,12 @@ $(document).ready(function() {
         }
     ];
 
-    const bici_copia = bici.map((element) =>
-    element);
+    const bici_copia = bici.map((element) =>{
+        const element_copia = {
+            ...element
+        };
+        return element_copia;
+    })
 
     bici_copia.forEach((element) => {
         let position;
@@ -28,6 +32,7 @@ $(document).ready(function() {
 
 
     console.log(bici_copia);
+    console.log(bici);
 
 })
 
