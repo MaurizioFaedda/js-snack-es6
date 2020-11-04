@@ -1,22 +1,33 @@
 $(document).ready(function() {
 
-    const nomi = ['mario', 'luca', 'luigi', 'maria', 'sara', 'mauro', 'alice'];
+    const bici = [
+        {
+            nome : 'corsa',
+            peso : 40
+        },
+        {
+            nome : 'bmx',
+            peso : 30
+        },
+        {
+            nome : 'mountain',
+            peso : 90
+        }
+    ];
 
-
-
-    let nomi_copia = nomi.map((element) =>
+    const bici_copia = bici.map((element) =>
     element);
 
-    nomi_copia.forEach((element) => {
-
-        element.position = {
+    bici_copia.forEach((element) => {
+        let position;
+        element.posizione = {
             position : getRandomChar()
         };
     });
 
 
 
-    console.log(nomi_copia);
+    console.log(bici_copia);
 
 })
 
